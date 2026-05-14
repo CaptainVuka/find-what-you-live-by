@@ -2,83 +2,68 @@
 
 # find-what-you-live-by
 
-> A Claude Skill that helps you extract 1–3 personal principles from your own life experiences, inspired by Benjamin Franklin's 13 virtues method.
+> I distilled the meta-method for building life direction into a Claude Skill.
 
 ---
 
-## What is this
+## Who this is for
 
-**Find What You Live By** is a Claude Skill that runs a 30–60 minute structured conversation to help you extract 1–3 personal principles from your own life experiences.
+- People at a life transition, facing important choices
+- People with a clear sense of who they want to become — and a gap between that and the present
+- People who want principles of their own, not someone else's list
 
-It's not a chatbot, not a coach, not a therapist. It's closest to **a patient mirror** — helping you see what you already know but haven't articulated.
+## Why this method works
 
-The conversation goes through four stages:
+> This method has given me enormous strength — when I'm thinking about what matters, and when I'm facing setbacks.
 
-1. Collecting 2–3 recent moments that still sting
-2. Letting you find the patterns yourself
-3. Distilling those patterns into 1–3 principles in your own words
-4. Checking for conspicuous absences, then helping you practice
+### 1. A method that's been tested
 
-## See it in action
+At 18, Franklin went through a string of failures and was a mess. In 1726, at 20, on the ship back to Philadelphia, he wrote his *Plan of Conduct*. The manuscript survives — his first formal self-management document. He wrote:
 
-To get a feel for what this conversation looks like, read a sample: [examples/sample-conversation.md](./examples/sample-conversation.md). The example is in Chinese — it's a 12-turn compressed version showing the core mechanics.
+> "I have never fix'd a regular design in life; by which means it has been a confused variety of different scenes. Let me, therefore, make some resolutions, and form some scheme of action, that, henceforth, I may live in all respects like a rational creature."
 
-## Why
+He used it his whole life. Near the end he admitted some virtues he never mastered, but he said: **"By the endeavour, I was a better and a happier man than I otherwise should have been."**
 
-Most self-improvement tools fail the same way: **they push someone else's wisdom on you, then wonder why you quit in three weeks**.
+### 2. Agency first
 
-Franklin's method (designed in his 20s) was different — he extracted 13 principles from his **own repeated mistakes**, each translated into specific, daily-checkable behaviors. He used it his whole life, admitted some he never mastered, but said: *"By the endeavour, I was a better and a happier man than I otherwise should have been."*
+This Skill does **not** hand you a "100 life principles" list.
 
-This Skill recreates that — not by giving you Franklin's thirteen, but by helping you find your own.
+Other people's lists feel inspiring at the moment — and you forget them two weeks later, because they weren't ground out of your own life. This Skill helps you distill principles from your **own weighted experiences**, in your own words.
 
-## Installation
+### 3. Principles translated into observable behaviors
 
-### Option 1: Download the `.skill` file
+Every principle becomes a behavior you can check.
 
-1. Download [`find-what-you-live-by.skill`](./find-what-you-live-by.skill)
-2. Install it in Claude.ai or Claude Code
-3. Find a quiet 30–60 minutes and tell Claude: *"I want to find my own principles"* — or any similar expression
+- **"Temperance"** isn't an abstract quality — it's *"eat not to dullness, drink not to elevation"* — two concrete bodily signals.
+- **"Industry"** isn't "work hard" — it's *"lose no time; be always employ'd in something useful; cut off all unnecessary actions."*
 
-### Option 2: From source
+## How to use
 
-Clone this repo and place `SKILL.md` in your Claude client's skills directory.
+### Install
 
-## When to use
+**Claude.ai / Claude Code (recommended)**
+Download [`find-what-you-live-by.skill`](./find-what-you-live-by.skill) and import it directly in your Claude client.
 
-This Skill is for you if any of these resonate:
+**Other models (ChatGPT, Gemini, Kimi, Doubao, DeepSeek, etc.)**
+Open [`SKILL.md`](./SKILL.md) and paste the full contents into the chat as a system prompt or first message. Any sufficiently capable instruction-following model can run it — but the experience will differ. This Skill was designed and tested on Claude; other models may behave differently in certain moments (e.g. staying in the mirror role instead of deciding for you).
 
-- You want direction in life but can't articulate what
-- You feel like you're drifting, no anchor
-- You keep repeating the same mistakes and want to understand why
-- You just went through something significant (breakup, layoff, career change) and want real reflection
-- You want to do a year-end review but don't know where to start
-- You know Franklin's 13 virtues method and want an AI-guided version
+**From source**
+Clone the repo and place `SKILL.md` in your Claude client's skills directory.
 
-## What this Skill does NOT handle
+### Start the conversation
 
-For your safety, this conversation is **not appropriate** for:
+Find a quiet 30–60 minutes and tell the model: **"I want to find my own principles"** — or any similar expression.
 
-- Acute mental health crises (self-harm, suicidal ideation, severe depression)
-- Serious trauma (especially recent or ongoing)
-- Active symptoms of mental illness
-- Uncontrolled addiction
+To get a feel for the rhythm first, read a sample conversation: [examples/sample-conversation.md](./examples/sample-conversation.md).
 
-If you're experiencing any of these, **please seek professional support**.
-
-## Design philosophy
-
-- **Agency > tooling**: Claude doesn't decide your principles, it helps you articulate them.
-- **Less > more**: Start with 1–3 principles, not 13.
-- **Honest > polished**: A rough but true version beats a polished but fake one.
-- **Extract from failure, not receive from wisdom**: Your principles come from your own repeated stumbles.
-- **Record failure, not success**: Franklin's notebook tracked where he fell short — that's how he saw his patterns.
+> ⚠️ Not appropriate for acute mental health crises, serious trauma, active symptoms of mental illness, or uncontrolled addiction — see [SAFETY.md](./SAFETY.md).
 
 ## About the author
 
-Designed by **WokaCaptain (乌卡船长)** — a builder with a background in philosophy, committed to building better skills and ecosystems.
+**WokaCaptain (乌卡船长)** — a builder with a background in philosophy, committed to building better skills and ecosystems.
 
 For collaboration, search **乌卡船长** on Xiaohongshu (Little Red Book) or WeChat Official Accounts.
 
 ## License
 
-MIT License — see [LICENSE](./LICENSE).
+MIT — see [LICENSE](./LICENSE).
